@@ -59,6 +59,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenPdf }) => {
               <li><a href="#chapters" className="hover:text-amber-300 transition-colors">Τα 3 Κεφάλαια</a></li>
               <li><a href="#characters" className="hover:text-amber-300 transition-colors">Ψυχογραφικά Προφίλ</a></li>
               <li><a href="#investigation" className="hover:text-amber-300 transition-colors">Ο Πίνακας των Στοιχείων</a></li>
+              <li><a href="#blog" className="hover:text-amber-300 transition-colors">Δοκίμια & Blog</a></li>
               <li><a href="#reader" className="hover:text-amber-300 transition-colors">Αναγνωστήριο Αποσπασμάτων</a></li>
               <li><a href="#debate" className="hover:text-amber-300 transition-colors">Το Τελικό Ερώτημα</a></li>
             </ul>

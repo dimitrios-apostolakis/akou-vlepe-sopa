@@ -13,7 +13,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenPdf }) => {
     { href: "#overview", label: "Σύνοψη" },
     { href: "#chapters", label: "Τα 3 Κεφάλαια" },
     { href: "#characters", label: "Χαρακτήρες" },
-    { href: "#investigation", label: "Στοιχεία Υπόθεσης" },
+    { href: "#investigation", label: "Στοιχεία" },
+    { href: "#blog", label: "Δοκίμια & Blog" },
     { href: "#reader", label: "Αποσπάσματα" },
     { href: "#debate", label: "Το Δίλημμα" },
   ];
@@ -37,7 +38,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenPdf }) => {
         </a>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-slate-300">
+        <nav className="hidden lg:flex items-center gap-5 text-sm font-medium text-slate-300">
           {navLinks.map((link) => (
             <a
               key={link.href}
@@ -70,7 +71,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenPdf }) => {
         </div>
 
         {/* Mobile menu toggle */}
-        <div className="flex items-center gap-2 md:hidden">
+        <div className="flex items-center gap-2 lg:hidden">
           <AudioAmbience />
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -84,7 +85,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenPdf }) => {
 
       {/* Mobile drawer */}
       {mobileMenuOpen && (
-        <div className="md:hidden glass-panel border-b border-slate-800 px-4 pt-3 pb-5 space-y-3">
+        <div className="lg:hidden glass-panel border-b border-slate-800 px-4 pt-3 pb-5 space-y-3">
           <div className="flex flex-col space-y-2">
             {navLinks.map((link) => (
               <a

@@ -5,6 +5,7 @@ import { BookOverview } from './components/BookOverview';
 import { ChaptersSection } from './components/ChaptersSection';
 import { CharactersSection } from './components/CharactersSection';
 import { InvestigationBoard } from './components/InvestigationBoard';
+import { BlogSection } from './components/BlogSection';
 import { ReaderSection } from './components/ReaderSection';
 import { DebateSection } from './components/DebateSection';
 import { Footer } from './components/Footer';
@@ -23,6 +24,7 @@ export function App() {
         <ChaptersSection onOpenPdf={() => setIsPdfOpen(true)} />
         <CharactersSection />
         <InvestigationBoard />
+        <BlogSection />
         <ReaderSection onOpenPdf={() => setIsPdfOpen(true)} />
         <DebateSection />
       </main>
